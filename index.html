@@ -217,6 +217,8 @@ Error message and password prompt
 
 <li>$:/view</li>
 
+<li>Export</li>
+
 <li>Meta</li>
 
 <li>Pihole</li>
@@ -11633,14 +11635,14 @@ Error message and password prompt
 <div created="20201230102734994" creator="gerwitz" modified="20201230102734994" modifier="gerwitz" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Filter</pre>
 </div>
-<div created="20201230102816979" creator="gerwitz" modified="20201230110557605" modifier="gerwitz" title="$:/state/tab--1963855381">
-<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
+<div created="20201230102816979" creator="gerwitz" modified="20201230133652808" modifier="gerwitz" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/StoryView</pre>
 </div>
-<div created="20201230102800723" creator="gerwitz" modified="20201230102800723" modifier="gerwitz" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20201230102800723" creator="gerwitz" modified="20201230133656267" modifier="gerwitz" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
-<div created="20201230102759054" creator="gerwitz" modified="20201230132816066" modifier="gerwitz" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Settings</pre>
+<div created="20201230102759054" creator="gerwitz" modified="20201230133654831" modifier="gerwitz" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20201230110634422" creator="gerwitz" modified="20201230113854412" modifier="gerwitz" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -11652,12 +11654,12 @@ Error message and password prompt
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20201230102708064" creator="g" modified="20201230102708660" modifier="gerwit" title="$:/status/UserName">
 <pre>gerwitz</pre>
 </div>
-<div list="$:/Import Meta" title="$:/StoryList">
+<div created="20201230133628904" creator="gerwitz" list="Export $:/ControlPanel Meta" modified="20201230133628904" modifier="gerwitz" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201230102812532" creator="gerwitz" modified="20201230110552437" modifier="gerwitz" title="$:/theme">
@@ -11780,6 +11782,22 @@ Error message and password prompt
 </div>
 <div created="20201230110356766" creator="gerwitz" modified="20201230110434697" modifier="gerwitz" title="$:/view">
 <pre>classic</pre>
+</div>
+<div created="20201230134049086" creator="gerwitz" modified="20201230134113594" modifier="gerwitz" tags="" title="Export" type="text/x-markdown">
+<pre>See https://nesslabs.com/digital-garden-tiddlywiki
+
+\define my-static-website()
+&lt;$action-sendmessage $message=&quot;tm-zip-create&quot; $param=&quot;$:/temp/_ZipTiddler&quot;/&gt;
+&lt;$list filter=&quot;[all[tiddlers]!is[system]limit[100]]&quot;&gt;
+&lt;$action-sendmessage $message=&quot;tm-zip-render-file&quot; $param=&quot;$:/temp/_ZipTiddler&quot; filename={{{ [&lt;currentTiddler&gt;encodeuricomponent[]addsuffix[.html]] }}} tiddler=&lt;&lt;currentTiddler&gt;&gt; template=&quot;$:/core/templates/static.tiddler.html&quot;/&gt;
+&lt;/$list&gt;
+&lt;$action-sendmessage $message=&quot;tm-zip-render-file&quot; $param=&quot;$:/temp/_ZipTiddler&quot; filename=&quot;static.css&quot; template=&quot;$:/core/templates/static.template.css&quot;/&gt;
+&lt;$action-sendmessage $message=&quot;tm-zip-download&quot; $param=&quot;$:/temp/_ZipTiddler&quot; filename=&quot;digitalgarden.zip&quot;/&gt;
+\end
+
+&lt;$button actions=&lt;&lt;my-static-website&gt;&gt;&gt;
+Generate Static Website
+&lt;/$button&gt;</pre>
 </div>
 <div created="20201230103040720" creator="gerwitz" modified="20201230133401085" modifier="gerwitz" tags="" title="Meta" type="text/x-markdown">
 <pre>## About this wiki
