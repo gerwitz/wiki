@@ -145,6 +145,8 @@ Error message and password prompt
 
 <li>$:/config/Plugins/Disabled/$:/plugins/rmnvsl/krystal</li>
 
+<li>$:/config/WikiParserRules/Inline/wikilink</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -217,8 +219,6 @@ Error message and password prompt
 
 <li>Pihole</li>
 
-<li>ViewTemplate</li>
-
 </ul>
 </p>
 
@@ -238,6 +238,9 @@ Error message and password prompt
 </div>
 <div created="20201230103747096" creator="gerwitz" modified="20201230103747096" modifier="gerwitz" title="$:/config/Plugins/Disabled/$:/plugins/rmnvsl/krystal">
 <pre>yes</pre>
+</div>
+<div created="20201230132817438" creator="gerwitz" modified="20201230132817438" modifier="gerwitz" title="$:/config/WikiParserRules/Inline/wikilink">
+<pre>disable</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
 <pre>{
@@ -11386,8 +11389,8 @@ Error message and password prompt
 <div created="20201230102800723" creator="gerwitz" modified="20201230102800723" modifier="gerwitz" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20201230102759054" creator="gerwitz" modified="20201230110632434" modifier="gerwitz" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20201230102759054" creator="gerwitz" modified="20201230132816066" modifier="gerwitz" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20201230110634422" creator="gerwitz" modified="20201230113854412" modifier="gerwitz" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -11395,16 +11398,16 @@ Error message and password prompt
 <div created="20201230111456485" creator="gerwitz" modified="20201230111518570" modifier="gerwitz" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20201230111027705" creator="gerwitz" modified="20201230111521599" modifier="gerwitz" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Recent</pre>
+<div created="20201230111027705" creator="gerwitz" modified="20201230132812493" modifier="gerwitz" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20201230102708064" creator="g" modified="20201230102708660" modifier="gerwit" title="$:/status/UserName">
 <pre>gerwitz</pre>
 </div>
-<div list="ViewTemplate $:/Import Meta" title="$:/StoryList">
+<div created="20201230132803358" creator="gerwitz" list="$:/ControlPanel Pihole Meta" modified="20201230132813751" modifier="gerwitz" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201230102812532" creator="gerwitz" modified="20201230110552437" modifier="gerwitz" title="$:/theme">
@@ -11543,13 +11546,6 @@ I've kept the two default adlists, and added [OISD](https://oisd.nl/). I also ad
 It uses the USG for upstream queries, though I will probably add 1.1.1.1 as an alternative.
 
 For testing, only my phone and iPad are using it.</pre>
-</div>
-<div created="20201230132642524" creator="gerwitz" modified="20201230132735548" modifier="gerwitz" tags="$:/tags/ViewTemplate" title="ViewTemplate" type="text/plain">
-<pre>&lt;$list filter=&quot;[all[current]backlinks[]sort[title]]&quot; emptyMessage=&quot;&quot;&gt;
-&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;: &lt;/$link&gt;
-&lt;$context length=80 term=&lt;&lt;storyTiddler&gt;&gt; /&gt;
-&lt;br&gt;
-&lt;/$list&gt;</pre>
 </div>
 
 
