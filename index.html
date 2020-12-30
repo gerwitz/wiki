@@ -11783,10 +11783,8 @@ Error message and password prompt
 <div created="20201230110356766" creator="gerwitz" modified="20201230110434697" modifier="gerwitz" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20201230134049086" creator="gerwitz" modified="20201230134139229" modifier="gerwitz" tags="" title="Export" type="text/vnd.tiddlywiki">
-<pre>See https://nesslabs.com/digital-garden-tiddlywiki
-
-\define my-static-website()
+<div created="20201230134049086" creator="gerwitz" modified="20201230134321766" modifier="gerwitz" tags="" title="Export" type="text/vnd.tiddlywiki">
+<pre>\define my-static-website()
 &lt;$action-sendmessage $message=&quot;tm-zip-create&quot; $param=&quot;$:/temp/_ZipTiddler&quot;/&gt;
 &lt;$list filter=&quot;[all[tiddlers]!is[system]limit[100]]&quot;&gt;
 &lt;$action-sendmessage $message=&quot;tm-zip-render-file&quot; $param=&quot;$:/temp/_ZipTiddler&quot; filename={{{ [&lt;currentTiddler&gt;encodeuricomponent[]addsuffix[.html]] }}} tiddler=&lt;&lt;currentTiddler&gt;&gt; template=&quot;$:/core/templates/static.tiddler.html&quot;/&gt;
@@ -11794,6 +11792,8 @@ Error message and password prompt
 &lt;$action-sendmessage $message=&quot;tm-zip-render-file&quot; $param=&quot;$:/temp/_ZipTiddler&quot; filename=&quot;static.css&quot; template=&quot;$:/core/templates/static.template.css&quot;/&gt;
 &lt;$action-sendmessage $message=&quot;tm-zip-download&quot; $param=&quot;$:/temp/_ZipTiddler&quot; filename=&quot;digitalgarden.zip&quot;/&gt;
 \end
+
+See https://nesslabs.com/digital-garden-tiddlywiki and https://tiddlywiki.com/static/Generating%2520Static%2520Sites%2520with%2520TiddlyWiki.html
 
 &lt;$button actions=&lt;&lt;my-static-website&gt;&gt;&gt;
 Generate Static Website
