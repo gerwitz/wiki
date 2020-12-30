@@ -213,6 +213,8 @@ Error message and password prompt
 
 <li>Meta</li>
 
+<li>Pihole</li>
+
 </ul>
 </p>
 
@@ -11350,7 +11352,7 @@ Error message and password prompt
 <div created="20201230102708064" creator="g" modified="20201230102708660" modifier="gerwit" title="$:/status/UserName">
 <pre>gerwitz</pre>
 </div>
-<div list="GettingStarted" title="$:/StoryList">
+<div list="Pihole Meta" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201230102812532" creator="gerwitz" modified="20201230110552437" modifier="gerwitz" title="$:/theme">
@@ -11480,6 +11482,15 @@ Error message and password prompt
 Generally uses [Markdown](https://tiddlywiki.com/plugins/tiddlywiki/markdown/).
 
 [Saves to GitHub](https://kookma.github.io/TW5-GitHub-Saver/).</pre>
+</div>
+<div created="20201230125919254" creator="gerwitz" modified="20201230130808737" modifier="gerwitz" tags="" title="Pihole" type="text/x-markdown">
+<pre>Test instance is running on Synology via the official docker image. The _latest_ tag has some sort of re-assignment bug with `ServerIP` but _master_ is working. Option 1 on [this tutorial](https://www.wundertech.net/how-to-setup-pi-hole-on-a-synology-nas-two-methods/) is a good reference. It is using the Synology's LAN IP with port 53 for DNS (of course) and 8888 for web.
+
+I've kept the two default adlists, and added [OISD](https://oisd.nl/). I also added [this list of regex patterns](https://github.com/mmotti/pihole-regex/blob/master/regex.list). Finally, I added anudeep's [whitelist](https://github.com/anudeepND/whitelist).
+
+It uses the USG for upstream queries, though I will probably add 1.1.1.1 as an alternative.
+
+For testing, only my phone and iPad are using it.</pre>
 </div>
 
 
