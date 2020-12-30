@@ -143,8 +143,6 @@ Error message and password prompt
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler</li>
 
-<li>$:/config/Plugins/Disabled/$:/plugins/flibbles/relink</li>
-
 <li>$:/config/Plugins/Disabled/$:/plugins/rmnvsl/krystal</li>
 
 <li>$:/config/WikiParserRules/Inline/wikilink</li>
@@ -158,6 +156,8 @@ Error message and password prompt
 <li>$:/GitHub/Repo</li>
 
 <li>$:/GitHub/Username</li>
+
+<li>$:/Import</li>
 
 <li>$:/isEncrypted</li>
 
@@ -235,9 +235,6 @@ Error message and password prompt
 <div id="storeArea" style="display:none;">
 <div created="20201230111044209" creator="gerwitz" modified="20201230111044209" modifier="gerwitz" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-tiddler">
 <pre>hide</pre>
-</div>
-<div created="20201230133104637" creator="gerwitz" modified="20201230133104637" modifier="gerwitz" title="$:/config/Plugins/Disabled/$:/plugins/flibbles/relink">
-<pre>yes</pre>
 </div>
 <div created="20201230103747096" creator="gerwitz" modified="20201230103747096" modifier="gerwitz" title="$:/config/Plugins/Disabled/$:/plugins/rmnvsl/krystal">
 <pre>yes</pre>
@@ -10121,6 +10118,11 @@ Error message and password prompt
 <div created="20201230110637069" creator="gerwitz" modified="20201230110637573" modifier="gerwitz" title="$:/GitHub/Username">
 <pre>gerwitz</pre>
 </div>
+<div status="complete" title="$:/Import">
+<pre>The following tiddlers were imported:
+
+# [[$:/plugins/danielo515/ContextPlugin]]</pre>
+</div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
@@ -11387,25 +11389,25 @@ Error message and password prompt
 <div created="20201230102800723" creator="gerwitz" modified="20201230102800723" modifier="gerwitz" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Advanced</pre>
 </div>
-<div created="20201230102759054" creator="gerwitz" modified="20201230133044300" modifier="gerwitz" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Plugins</pre>
+<div created="20201230102759054" creator="gerwitz" modified="20201230132816066" modifier="gerwitz" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20201230110634422" creator="gerwitz" modified="20201230113854412" modifier="gerwitz" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20201230111456485" creator="gerwitz" modified="20201230133304073" modifier="gerwitz" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/System</pre>
+<div created="20201230111456485" creator="gerwitz" modified="20201230111518570" modifier="gerwitz" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/All</pre>
 </div>
-<div created="20201230111027705" creator="gerwitz" modified="20201230133256732" modifier="gerwitz" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20201230111027705" creator="gerwitz" modified="20201230132812493" modifier="gerwitz" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Tools</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
-<pre>yes</pre>
+<pre>no</pre>
 </div>
 <div created="20201230102708064" creator="g" modified="20201230102708660" modifier="gerwit" title="$:/status/UserName">
 <pre>gerwitz</pre>
 </div>
-<div created="20201230133042638" creator="gerwitz" list="$:/Import $:/ControlPanel Meta" modified="20201230133110521" modifier="gerwitz" title="$:/StoryList">
+<div list="Meta" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20201230102812532" creator="gerwitz" modified="20201230110552437" modifier="gerwitz" title="$:/theme">
@@ -11529,12 +11531,14 @@ Error message and password prompt
 <div created="20201230110356766" creator="gerwitz" modified="20201230110434697" modifier="gerwitz" title="$:/view">
 <pre>classic</pre>
 </div>
-<div created="20201230103040720" creator="gerwitz" modified="20201230113813630" modifier="gerwitz" tags="" title="Meta" type="text/x-markdown">
+<div created="20201230103040720" creator="gerwitz" modified="20201230133401085" modifier="gerwitz" tags="" title="Meta" type="text/x-markdown">
 <pre>## About this wiki
 
 Generally uses [Markdown](https://tiddlywiki.com/plugins/tiddlywiki/markdown/).
 
-[Saves to GitHub](https://kookma.github.io/TW5-GitHub-Saver/).</pre>
+[Saves to GitHub](https://kookma.github.io/TW5-GitHub-Saver/).
+
+Makes this more Wiki-like with the &quot;blinks&quot; plugin from [Stroll](https://giffmex.org/stroll/stroll.html)</pre>
 </div>
 <div created="20201230125919254" creator="gerwitz" modified="20201230130808737" modifier="gerwitz" tags="" title="Pihole" type="text/x-markdown">
 <pre>Test instance is running on Synology via the official docker image. The _latest_ tag has some sort of re-assignment bug with `ServerIP` but _master_ is working. Option 1 on [this tutorial](https://www.wundertech.net/how-to-setup-pi-hole-on-a-synology-nas-two-methods/) is a good reference. It is using the Synology's LAN IP with port 53 for DNS (of course) and 8888 for web.
